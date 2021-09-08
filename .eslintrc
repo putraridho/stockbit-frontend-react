@@ -1,0 +1,30 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jquery": true
+  },
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "airbnb/hooks", "prettier"],
+  "plugins": ["import", "prettier"],
+  "rules": {
+    "linebreak-style": 0,
+    "no-console": 0,
+    "no-underscore-dangle": 0,
+    "import/no-extraneous-dependencies": 0,
+    "no-plusplus": 0,
+    "quotes": ["error", "single"],
+    "function-paren-newline": 0,
+    "indent": ["warn", 2],
+    "implicit-arrow-linebreak": 0
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".json", ".scss"],
+        "moduleDirectory": ["node_modules", "src"]
+      }
+    }
+  }
+}
